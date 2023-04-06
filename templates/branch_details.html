@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Add Course</h1>
+<form method="post">
+    {% csrf_token %}
+    <label for="ifsc">bank ifsc:</label>
+    <input type="text" name="ifsc"><br>
+    <label for="branch">bank branch:</label>
+    <input type="text" name="branch"><br>
+    <label for="address">address:</label>
+    <input type="text" name="address"><br>
+    <label for="city">city:</label>
+    <input type="text" name="city"><br>
+    <label for="district">district:</label>
+    <input type="text" name="ifsc"><br>
+    <label for="state">state:</label>
+    <input type="text" name="state"><br>
+    <label for="banks">banks:</label>
+    <input type="text" name="banks"><br>
+    <input type="submit" value="Submit">
+</form>
+    
+</body>
+</html>
+
